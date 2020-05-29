@@ -6,4 +6,3 @@ test:
 
 coding-style:
 	./venv/Scripts/python -m flake8 ./src ./tests
-	./venv/Scripts/python -m pydocstyle ./src
