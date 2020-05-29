@@ -17,8 +17,6 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
       - name: Coding style PEP8 & PEP257
-        run: |
-          python -m pip flake8 ./src ./tests
-          python -m pydocstyle ./src
+        run: python -m pip flake8 ./src ./tests
       - name: Run tests
         run: python -m pytest
